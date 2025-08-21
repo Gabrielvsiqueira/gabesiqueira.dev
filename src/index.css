@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+:root {
+    background-color: #210D2C;
+    color: #ffff;
+    font-family: "Carrois Gothic",sans-serif;
+}
