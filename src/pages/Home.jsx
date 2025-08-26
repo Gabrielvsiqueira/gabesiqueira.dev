@@ -48,11 +48,7 @@ function Introduction() {
               Engenheiro de Software
             </motion.p>
             <motion.p variants={itemVariants}>
-              Sou engenheiro de software com foco em desenvolvimento de interfaces de usuário (UI) para front-end.
-              Sou especialista em frameworks como React, Vue e Angular, e tenho um sólido domínio de JavaScript,
-              Typescript e PHP. Sou proficiente em frameworks de UI como Bootstrap e Tailwind e tenho experiência
-              com desenvolvimento e uso de sistemas de design. Também possuo experiência em bancos de dados como
-              PostgreSQL e MongoDB.
+              Sou engenheiro de software com foco em desenvolvimento de interfaces de usuário (UI) para front-end. Tenho dóminio de frameworks como React, Vue e Angular, e tenho um sólido domínio de JavaScript, Typescript e PHP. Sou proficiente em frameworks de UI como Bootstrap e Tailwind e tenho experiência com desenvolvimento e uso de sistemas de design. Também possuo experiência em bancos de dados como PostgreSQL e MongoDB.
             </motion.p>
 
             <motion.div
