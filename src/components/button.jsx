@@ -18,8 +18,8 @@ const StyledWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: auto; /* Mudei para 'auto' para o botão se ajustar ao texto */
-    min-width: 120px; /* Adicionei uma largura mínima */
+    width: auto;
+    min-width: 60px;
     height: 40px;
     border: none;
     padding: 0px 20px;
@@ -28,11 +28,11 @@ const StyledWrapper = styled.div`
     font-weight: 500;
     cursor: pointer;
     border-radius: 10px;
-    box-shadow: 5px 5px 0px rgba(105, 8, 170, 0.82);
-    transition-duration: .3s;
+    box-shadow: 5px 5px 0px rgba(56, 15, 67, 0.8);
+    transition-duration: .4s;
   }
   .Btn:hover {
-    box-shadow: 10px 10px 0px rgba(105, 8, 170, 0.82);
+    box-shadow: 10px 10px 0px rgba(145, 3, 170, 0.82);
     transform: translateY(-2px);
     background-color: rgba(92, 10, 148, 0.8);
   }`;
