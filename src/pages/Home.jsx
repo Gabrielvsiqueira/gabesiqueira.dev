@@ -3,6 +3,7 @@ import MyButton from '../components/button';
 import '../index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
+import perfilPage from '../img/perfil.png';
 
 function introduciton() {
   return (
@@ -19,7 +20,7 @@ function introduciton() {
     <main>
     <div className=' flex flex-col items-center justify-center md:flex-row items-center gap-10 p-10'>
       <div className='max-w-2xl'>
-        <h1 class="text-5xl font-normal">Oi! Eu sou o Siqueira </h1>
+        <h1 class="text-5xl font-normal">Gabriel Siqueira </h1>
         <p className="text-[24px] mt-3">Engenheiro de Software</p>
         <p className='mt-3'>Sou engenheiro de software com foco em desenvolvimento de interfaces de usuário (UI) para front-end. Sou especialista em frameworks como React, Vue e Angular, e tenho um sólido domínio de JavaScript, Typescript e PHP. Sou proficiente em frameworks de UI como Bootstrap e Tailwind e tenho experiência com desenvolvimento e uso de sistemas de design. Também possuo experiência em bancos de dados como PostgreSQL e MongoDB..</p>
 
@@ -31,7 +32,7 @@ function introduciton() {
         </div>
       </div>
       <div className='flex-shrink-0'>
-        <img className='w-[320px] h-[560px] object-cover rounded-[490px]' src="./src/assets/perfil.png" alt="my photo in black&white style." />
+        <img className='w-[320px] h-[560px] object-cover rounded-[490px]' src={perfilPage} alt="my photo in black&white style." />
       </div>
     </div>
     </main>
