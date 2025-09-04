@@ -1,24 +1,18 @@
-"use client"
-
-import {
-    motion,
-    useScroll,
-    useSpring,
-    useTransform,
-} from "framer-motion"
+import { motion, useScroll, useSpring, useTransform, } from "framer-motion"
 import { useRef } from "react"
+
 
 function useParallax(value, distance) {
   return useTransform(value, [0, 1], [-distance, distance])
 }
 
-function Image({ id, date, text, subtext }) {
+function Image({ date, text, subtext }) {
     const ref = useRef(null)
     const { scrollYProgress } = useScroll({ target: ref })
     const y = useParallax(scrollYProgress, 300)
 
     // Novos efeitos de animação para o container e o texto
-    const opacity = useTransform(scrollYProgress, [0, , 1], [0, 1, 0])
+    const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 0])
     const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.8, 1, 0.8])
     const textY = useTransform(scrollYProgress, [0, 0.5, 1], [50, 0, -50])
 
