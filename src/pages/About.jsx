@@ -1,129 +1,153 @@
-import React from 'react';
- import { BrowserRouter, Routes, Route } from 'react-router-dom';
- import '../index.css';
+"use client"
 
+import {
+    motion,
+    useScroll,
+    useSpring,
+    useTransform,
+} from "framer-motion"
+import { useRef } from "react"
 
- function About() {
-  return (
-    <>
-    <h1 className='text-5xl flex items-center justify-center p-5'>Sobre mim</h1>
-<ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-  <li>
-    <div className="timeline-middle text-white">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        className="h-5 w-5"
-      >
-        <path
-          fillRule="evenodd"
-          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-          clipRule="evenodd"
-        />
-      </svg>
-    </div>
-    <div className="timeline-start mb-10 md:text-end text-white">
-    <time className="font-mono italic">2025</time>
-      <div className="text-lg font-black">Atualmente</div>
-      Hoje, trabalho como Engenheiro de testes na Globant, uma consultoria de software multinacional. Meus objetivos de carreira hoje é voltar a trabalhar exclusivamente com desenvolvimento Web UI, e me tornar um especialista na área. Estou sempre buscando aprender mais e me aprimorar profissionalmente, e acredito que a tecnologia é uma área em constante evolução, o que me motiva a continuar aprendendo e crescendo.
-    </div>
-    <hr className="bg-white" />
-  </li>
-  <li>
-    <hr className="bg-white" />
-    <div className="timeline-middle text-white">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        className="h-5 w-5"
-      >
-        <path
-          fillRule="evenodd"
-          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-          clipRule="evenodd"
-        />
-      </svg>
-    </div>
-    <div className="timeline-end md:mb-10 text-white">
-    <time className="font-mono italic">2012</time>
-      <div className="text-lg font-black">Quando tudo ainda era só mato..</div>
-      Quando criança eu sempre fui muito curioso e xereta, ficava fuçando em tudo que via pela frente, desmontava os brinquedos para ver como funcionavam,desmontava os roteadores wi-fi pra entender como eles funcionavem e isso me levou a querer entender mais sobre tecnologia. Desde então, minha paixão por computadores e programação só cresceu.
-    </div>
-    <hr className="bg-white" />
-  </li>
-  <li>
-    <hr className="bg-white" />
-    <div className="timeline-middle text-white">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        className="h-5 w-5"
-      >
-        <path
-          fillRule="evenodd"
-          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-          clipRule="evenodd"
-        />
-      </svg>
-    </div>
-    <div className="timeline-start mb-10 md:text-end text-white">
-    <time className="font-mono italic">2019</time>
-      <div className="text-lg font-black">Sempre fui apaixonado por UI e descobri  </div>
-      Na faculdade minha verdadeira paixão que era uma desenvolvimento de software orientado ao usuário final, entender e descobrir o porque alguns layouts chamavam mais atenção que outros, como as cores influenciavam na percepção do usuário, e como a usabilidade era importante para a experiência do usuário. Desde então, tenho me dedicado a estudar e aprimorar minhas habilidades em design de interfaces e experiência do usuário.
-    </div>
-    <hr className="bg-white" />
-  </li>
-  <li>
-    <hr className="bg-white" />
-    <div className="timeline-middle text-white">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        className="h-5 w-5"
-      >
-        <path
-          fillRule="evenodd"
-          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-          clipRule="evenodd"
-        />
-      </svg>
-    </div>
-    <div className="timeline-end md:mb-10 text-white">
-    <time className="font-mono italic">2021</time>
-      <div className="text-lg font-black">Após alguns anos de Pandemia e aulas remotas</div>
-      Decidi qu era hora de começar a colocar em prática o que aprendi e junto com alguns amigos nos escrevemos no Hackhaton da NASA, o NASA SPACE APPS CHALLENGE. Após 48 horas sem dormir, ficamos em primeiro lugar no Brasil, e fomos para o desafio internacional. Foi uma experiência incrível e de muitos aprendizados. Esse diferencial no meu currículo me ajudou a conseguir meu primeiro estágio na área de desenvolvimento de software.
-    </div>
-    <hr className="bg-white" />
-  </li>
-  <li>
-    <hr className="bg-white" />
-    <div className="timeline-middle text-white">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        className="h-5 w-5"
-      >
-        <path
-          fillRule="evenodd"
-          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-          clipRule="evenodd"
-        />
-      </svg>
-    </div>
-    <div className="timeline-start mb-10 md:text-end text-white">
-    <time className="font-mono italic">2022</time>
-      <div className="text-lg font-black">O começo da minha trajetória profissional </div>
-      Após muitas entrevistas e testes técnicos, consegui minha primeira oportunidade como estágio de desenvolvimento de software. Foi um desafio incrível, meu primeiro contato com o mundo da tecnologia coorporativa. Tive muitas pessoas ao meu redor me ensinando, e me ajudando a crescer profisionalmente. Tive experiências com Desenvolvimento back-end com Oracle, Node.JS ,SQL Server e front-end com ReactJS, Boostrap e Tailwind. Aprendi muito sobre desenvolvimento ágil, metodologias ágeis e como trabalhar em equipe. Foi uma experiência incrível que me ajudou a crescer profissionalmente e pessoalmente.
-    </div>
-  </li>
-</ul>
-    </>
-  )
+function useParallax(value, distance) {
+  return useTransform(value, [0, 1], [-distance, distance])
 }
 
- export default About;
+function Image({ id, date, text, subtext }) {
+    const ref = useRef(null)
+    const { scrollYProgress } = useScroll({ target: ref })
+    const y = useParallax(scrollYProgress, 300)
+
+    // Novos efeitos de animação para o container e o texto
+    const opacity = useTransform(scrollYProgress, [0, , 1], [0, 1, 0])
+    const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.8, 1, 0.8])
+    const textY = useTransform(scrollYProgress, [0, 0.5, 1], [50, 0, -50])
+
+    return (
+        <section className="img-container">
+            <motion.div
+                ref={ref}
+                className="text-container"
+                style={{ opacity, scale }}
+            >
+                <motion.p style={{ y: textY }}>{text}</motion.p>
+            </motion.div>
+            <motion.h2
+                initial={{ visibility: "hidden" }}
+                animate={{ visibility: "visible" }}
+                style={{ y }}
+            >
+                {date}
+                <span className="subtext-style"> <br />{subtext}</span>
+            </motion.h2>
+        </section>
+    )
+}
+
+export default function Parallax() {
+    const { scrollYProgress } = useScroll()
+    const scaleX = useSpring(scrollYProgress, {
+        stiffness: 100,
+        damping: 30,
+        restDelta: 0.001,
+    })
+
+    const galleryData = [
+      { id: 1, date: '2025', subtext: '', text: 'Atualmente, sou Engenheiro de Testes na Globant, mas minha meta é voltar a atuar exclusivamente com desenvolvimento Web UI e me tornar um especialista na área. Minha motivação é a constante evolução da tecnologia, que me impulsiona a sempre aprender e crescer.' },
+
+      { id: 2, date: '2012', subtext: 'Quando tudo era mato..', text: 'Minha paixão por tecnologia começou cedo. Desde a infância, minha curiosidade me levava a desmontar objetos, como brinquedos e roteadores, para entender seu funcionamento. Essa curiosidade inicial evoluiu para uma paixão por tecnologia, que me inspirou a aprofundar meu conhecimento em computadores e programação ao longo dos anos.' },
+
+      { id: 3, date: '2019', subtext: 'Faculdade e descobrindo da minha Ítaca', text: 'Mais tarde, na faculdade, descobri que minha paixão de verdade era o desenvolvimento de software focado no usuário, estudando layouts e como as cores afetam a percepção e a experiência final de um produto. Desde então, descobri que queria trabalhar construindo interfaces de software e UX.' },
+
+      { id: 4, date: '2020',text: 'Em meio à pandemia, continuei apaixonado por UI e decidi que era hora de testar minhas habilidades e conhecimentos. Com as aulas remotas, me juntei a alguns amigos e nos inscrevi no NASA Space Apps Challenge, o hackathon oficial da NASA. Ficamos em primeiro lugar no Brasil, o que foi um diferencial no meu currículo e me ajudou a conseguir meu primeiro estágio.' },
+
+      { id: 5, date: '2021',subtext:' começo da minha trajetória profissional' , text: ' Esse foi o pontapé inicial para minha carreira. Após várias entrevistas, consegui meu primeiro estágio em desenvolvimento de software. Foi um desafio e uma experiência incrível, onde aprendi back-end com Oracle e Node.js, e front-end com ReactJS, Bootstrap e Tailwind, além de metodologias ágeis e trabalho em equipe.' },
+
+      { id: 6, date: '', subtext: 'Nos dias de hoje..', text: 'Minha motivação central é o crescimento contínuo. Acredito que a tecnologia está em constante evolução, e é exatamente essa dinâmica que me inspira a sempre buscar novos aprendizados e me aprimorar. Meu foco em me especializar em Web UI e desenvolvimento front-end demonstra minha ambição genuína de dominar a área que realmente me apaixona.' },
+
+    ];
+
+    return (
+        <div id="example">
+            {galleryData.map((item) => (
+                <Image key={item.id} id={item.id} date={item.date} subtext={item.subtext} text={item.text} />
+            ))}
+            <motion.div className="progress" style={{ scaleX }} />
+            <StyleSheet />
+        </div>
+    )
+}
+
+/**
+ * ==============   Styles   ================
+ */
+
+function StyleSheet() {
+    return (
+        <style>{`
+        html {
+            scroll-snap-type: y mandatory;
+        }
+
+        .img-container {
+            height: 100vh;
+            scroll-snap-align: start;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        /* Estilo para o novo container de texto */
+        .img-container > div {
+            width: 400px;
+            height: 500px;
+            margin: 20px;
+            background: #260d3598;
+            overflow: hidden;
+            display: flex; /* Adicionado para centralizar o texto */
+            justify-content: center; /* Centraliza o texto horizontalmente */
+            align-items: center; /* Centraliza o texto verticalmente */
+            padding: 20px;
+            box-sizing: border-box; /* Garante que padding não altere o tamanho */
+            text-align: center; /* Alinha o texto centralmente */
+        }
+
+        .text-container p {
+            font-size: 1.2rem;
+            color: #ffffff;
+        }
+
+        @media (max-width: 500px) {
+            .img-container > div {
+                width: 150px;
+                height: 200px;
+            }
+        }
+
+        .img-container h2 {
+            color: #8df0cc;
+            margin: 0;
+            font-family: "Azeret Mono", monospace;
+            font-size: 50px;
+            font-weight: 700;
+            letter-spacing: -3px;
+            line-height: 1.2;
+            position: absolute;
+            display: inline-block;
+            top: 190px;
+            text-align: center;
+            left: auto;
+        }
+
+        .progress {
+            position: fixed;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: #8df0cc;
+            bottom: 50px;
+            transform: scaleX(0);
+        }
+    `}</style>
+    )
+}
