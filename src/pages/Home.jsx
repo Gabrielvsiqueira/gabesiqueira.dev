@@ -25,7 +25,7 @@ function Introduction() {
     <>
       <header>
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-10 p-5">
-          <Link to={'/About'}>Sobre mim</Link>
+          <Link to={'/about'}>Sobre mim</Link>
           <p>Projetos</p>
           <p>Prêmios</p>
           <p>Contato</p>
