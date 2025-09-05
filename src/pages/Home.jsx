@@ -31,7 +31,6 @@ function Introduction() {
           <Link to={'/projects'}>Projetos</Link>
           <p>Prêmios</p>
           <p>Contato</p>
-          <ThemeController />
         </div>
       </header>
 
