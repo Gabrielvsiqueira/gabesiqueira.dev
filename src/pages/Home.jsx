@@ -4,6 +4,7 @@ import '../index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 import perfilPage from '../img/perfil.png';
+import ThemeController from '../components/ThemeController';
 import Projects from "./Projects";
 import { motion } from "framer-motion";
 
@@ -30,6 +31,7 @@ function Introduction() {
           <Link to={'/projects'}>Projetos</Link>
           <p>Prêmios</p>
           <p>Contato</p>
+          <ThemeController />
         </div>
       </header>
 
