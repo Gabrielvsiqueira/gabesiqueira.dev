@@ -43,7 +43,7 @@ function Projects() {
   const trizyProject = {
     image: trizyLogo,
     title: "Trizy - TSM e Sustentação",
-    description: "Como Desenvolvedor Full Stack, atuei na sustentação e evolução do sistema Trizy, uma plataforma que oferece soluções de logística para o setor de energia de transportes atendendo mais de 10.000 usuários ativos diariamente. Minhas responsabilidades incluíram a implementação de novas funcionalidades, correção de bugs e otimização do desempenho do sistema. Atuando como desenvolvedor na sustentação, ajudei na resolução de problemas técnicos, melhorando a estabilidade do sistema em 40%, com base na redu¸c˜ao de tickets recorrentes. ",
+    description: "Como Desenvolvedor Full Stack, atuei na sustentação e evolução do sistema Trizy, uma plataforma que oferece soluções de logística para o setor de energia de transportes atendendo mais de 10.000 usuários ativos diariamente. Minhas responsabilidades incluíram a implementação de novas funcionalidades, correção de bugs e otimização do desempenho do sistema. Atuando como desenvolvedor na sustentação, ajudei na resolução de problemas técnicos, melhorando a estabilidade do sistema em 40%, com base na redução de tickets recorrentes. ",
     tags: ["React", "Typescript", "Cypress", "Playwright", "SEO", "UI Testing", "Oracle Database", "PL/SQL", "PostgreSQL", "Python"]
   };
 
@@ -51,7 +51,7 @@ function Projects() {
     <div className="p-5 md:p-10 max-w-4xl mx-auto">
       <h1 className='text-3xl md:text-4xl font-normal text-center md:text-left mb-8 md:mb-12'>Projetos</h1>
       <motion.div
-        className="flex flex-col md:flex-row md:flex-wrap justify-center gap-8 md:gap-10"
+        className="flex flex-col justify-center items-center p-4 md:flex-row md:flex-wrap justify-center gap-8 md:gap-10"
         variants={containerVariants}
         initial="hidden"
         animate="show"
