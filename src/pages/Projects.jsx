@@ -4,14 +4,14 @@ import embraerLogo from "../img/embraer.jpg";
 import redeDorLogo from "../img/rededor.jpg";
 import trizyLogo from "../img/trizy.jpg";
 import athenaLogo from "../img/athena.png";
-import { motion } from "framer-motion"; // Importe a biblioteca aqui
+import { motion } from "framer-motion";
 
-// Defina as variantes de animação, como na sua página inicial
+
 const containerVariants = {
   hidden: {},
   show: {
     transition: {
-      staggerChildren: 0.6, // Anima cada filho com um pequeno atraso
+      staggerChildren: 0.6,
     },
   },
 };
