@@ -48,10 +48,10 @@ function Projects() {
   };
 
   return (
-    <div className="p-5 md:p-10 max-w-4xl mx-auto">
+    <div className="p-5 md:p-10 max-w-6xl mx-auto">
       <h1 className='text-3xl md:text-4xl font-normal text-center md:text-left mb-8 md:mb-12'>Projetos</h1>
       <motion.div
-        className="flex flex-col p-4 md:flex-row md:flex-wrap justify-center gap-8 md:gap-10"
+        className="flex flex-col p-4 md:flex-row md:flex-wrap justify-center itens-center gap-8 md:gap-10"
         variants={containerVariants}
         initial="hidden"
         animate="show"

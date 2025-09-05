@@ -1,8 +1,10 @@
+// src/components/Card.js
 import React from 'react';
 
 const Card = ({ image, title, description, badgeText, tags }) => {
   return (
-    <div className="card w-90 max-w-sm md:max-w-md  bg-base-100 shadow-sm mx-auto">
+    // Remova w-90 e mx-auto. Mantenha as classes de largura máxima.
+    <div className="card w-full max-w-sm md:max-w-md bg-base-100 shadow-sm">
       <figure className="h-48 w-full overflow-hidden flex items-center justify-center">
         <img src={image} className="h-full w-full object-cover" />
       </figure>
