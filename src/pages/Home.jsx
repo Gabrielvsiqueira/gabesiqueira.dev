@@ -6,6 +6,7 @@ import { faLinkedinIn, faInstagram, faGithub } from '@fortawesome/free-brands-sv
 import perfilPage from '../img/perfil.png';
 import ThemeController from '../components/ThemeController';
 import Projects from "./Projects";
+import Honors from './Honors';
 import { motion } from "framer-motion";
 
 const containerVariants = {
@@ -27,10 +28,10 @@ function Introduction() {
     <>
       <header>
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-10 p-5">
-          <Link to={'/about'}>Sobre mim</Link>
-          <Link to={'/projects'}>Projetos</Link>
-          <p>Prêmios</p>
-          <p>Contato</p>
+          <Link to={'/about'}> Sobre mim</Link>
+          <Link to={'/projects'}> Projetos</Link>
+          <Link to={'/honors'}> Prêmios</Link>
+          <p><a href="mailto:gabesiqueira25@gmail.com?subject=Orçamentos e Projetos&body=Olá! Gostaria de conversar sobre um projeto.">Contato</a></p>
         </div>
       </header>
 
@@ -94,6 +95,7 @@ function Introduction() {
           </motion.div>
         </div>
         <Projects/>
+        <Honors/>
       </main>
     </>
   );

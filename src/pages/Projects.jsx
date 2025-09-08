@@ -4,6 +4,7 @@ import embraerLogo from "../img/embraer.jpg";
 import redeDorLogo from "../img/rededor.jpg";
 import trizyLogo from "../img/trizy.jpg";
 import athenaLogo from "../img/athena.png";
+import drMiranda from "../img/miranda.jpg";
 import { motion } from "framer-motion";
 
 
@@ -28,6 +29,15 @@ function Projects() {
     description: "Participei da refatoração do Design System para à Embraer. Assumi um papel participativo na refatoração da perforamnce dos componentes do DS. Melhorando em 30% o tempo de carregamento dos componentes e melhorando o SEO das páginas web que usavam o antigo DS em 15 pontos. Uitlizamos ferramentas como StoryBook para documentar os componentes e Nx para gerenciar o monorepo do projeto.",
     tags: ["Web Components", "StoryBook", "Typescript", "Nx", "React", "Angular", "Vue", "SEO", "UI Testing"]
   };
+
+  const drMirandaProject = {
+    image: drMiranda,
+    title: "Cuida do Vô",
+    description: "Desenvolvi uma aplicação web para o Dr João Miranda com o projeto Cuida do Vô, para concentrar informaçõees sobre os serviço prestados pelo Dr João, e seu projeto que virou uma referência em na área de geriatria na cidade de São Francisco do sul. Com o site, a procura pelos serviços do Dr Miranda aumentou em 30%.",
+    tags: ["Tailwind", "Typescript", "HTML5", "CSS3", "SEO", "UI Testing"],
+    badgeText: 'Freelance',
+  };
+
   const athenaProject = {
     image: athenaLogo,
     title: "Corporate Project",
@@ -56,6 +66,15 @@ function Projects() {
         initial="hidden"
         animate="show"
       >
+         <motion.div variants={itemVariants}>
+          <Card
+            image={drMirandaProject.image}
+            title={drMirandaProject.title}
+            description={drMirandaProject.description}
+            badgeText={drMirandaProject.badgeText}
+            tags={drMirandaProject.tags}
+          />
+        </motion.div>
         <motion.div variants={itemVariants}>
           <Card
             image={embraerProject.image}
