@@ -151,6 +151,8 @@ export default function Parallax() {
 
 { id: 6, date: '2025', subtext: 'Nos dias de hoje..', text: 'Minha motivação central é o crescimento contínuo. Acredito que a tecnologia está em constante evolução, e é exatamente essa dinâmica que me inspira a sempre buscar novos aprendizados e me aprimorar. Meu foco em me especializar em Web UI e desenvolvimento front-end demonstra minha ambição genuína de dominar a área que realmente me apaixona.' },
 
+{ id: 7, date: 'Stacks', subtext: '', text: 'Minhas habilidades incluem o domínio de linguagens como: JavaScript, TypeScript e PHP, além de experiência com frameworks:  React e Vue. Também tenho conhecimento em frameworks de UI (Tailwind, Bootstrap, Material UI, Daisy UI) e ferramentas de design (Figma, StoryBook), complementando minha experiência com bancos de dados como PostgreSQL e MongoDB.' },
+
 ];
 
 

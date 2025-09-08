@@ -58,7 +58,7 @@ function Projects() {
   };
 
   return (
-    <div className="p-5 md:p-10 max-w-6xl mx-auto">
+    <div className="p-5 md:p-10 max-w-8xl mx-auto">
     <h1 class='text-4xl text-center md:text-4xl left font-normal mb-8 md:mb-12'>Projetos</h1>
       <motion.div
         className="flex flex-col p-4 md:flex-row md:flex-wrap justify-center itens-center gap-8 md:gap-10"

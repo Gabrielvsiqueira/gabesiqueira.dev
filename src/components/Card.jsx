@@ -11,8 +11,8 @@ const Card = ({ image, title, description, badgeText, tags }) => {
           {title}
           {badgeText && <div className="badge badge-secondary">{badgeText}</div>}
         </h2>
-        <p>{description}</p>
-        <div className="card-actions justify-center flex-wrap mt-4 gap-2">
+        <p className='md:text-xl'>{description}</p>
+        <div className="card-actions justify-center flex-wrap mt-4 gap-2 ">
           {tags && tags.map((tag, index) => (
             <div key={index} className="badge badge-outline">{tag}</div>
           ))}
