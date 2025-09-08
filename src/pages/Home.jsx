@@ -4,6 +4,7 @@ import '../index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 import perfilPage from '../img/perfil.png';
+import gabeSiqueira from '../img/gabe.jpeg';
 import ThemeController from '../components/ThemeController';
 import Projects from "./Projects";
 import Honors from './Honors';
@@ -88,10 +89,10 @@ function Introduction() {
             transition={{ duration: 0.8, delay: 0.5 }}
           >
             <img
-              className="w-[320px] h-[560px] object-cover rounded-[490px]"
-              src={perfilPage}
+              className="w-[350px] h-[500px] object-cover rounded-[50px] shadow-lg transition-all duration-500 hover:shadow-2xl hover:scale-105"
+              src={gabeSiqueira}
               alt="my photo in black&white style."
-            />
+              />
           </motion.div>
         </div>
         <Projects/>
