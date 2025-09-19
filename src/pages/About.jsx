@@ -139,19 +139,16 @@ export default function Parallax() {
 
   const galleryData = [
 
-    { id: 1, date: '2025', subtext: 'Hoje', text: 'Atualmente, sou Engenheiro de Testes na Globant, mas minha meta é voltar a atuar exclusivamente com desenvolvimento Web UI e me tornar um especialista na área. Minha motivação é a constante evolução da tecnologia, que me impulsiona a sempre aprender e crescer.' },
+    { id: 1, date: '2012', subtext: 'Quando tudo era mato..', text: 'Minha paixão por tecnologia começou cedo. Desde a infânca, minha curiosidade me levava a desmontar objetos, como brinquedos e roteadores, para entender seu funcionamento. Essa criosidade inicial evoluiu para uma paixão por tecnologia, que me inspirou a aprofundar meu conhecimento em computdores e programação ao longo dos anos.' },
+    { id: 2, date: '2019', subtext: 'Faculdade e descobrindo da minha Ítaca', text: 'Mais tarde, na faculdade, descobri que minha paixão de verdade era o desenvolvimento de software focado no usuário, estudando layouts e como as cores afetam a percepção e a experiência final de um produto. Desde então, descobri que queria trabalhar construindo interfaces de software e UX.' },
 
-    { id: 2, date: '2012', subtext: 'Quando tudo era mato..', text: 'Minha paixão por tecnologia começou cedo. Desde a infância, minha curiosidade me levava a desmontar objetos, como brinquedos e roteadores, para entender seu funcionamento. Essa curiosidade inicial evoluiu para uma paixão por tecnologia, que me inspirou a aprofundar meu conhecimento em computadores e programação ao longo dos anos.' },
+    { id: 3, date: '2020', text: 'Em meio à pandemia, continuei apaixonado por UI e decidi que era hora de testar minhas habilidades e conhecimentos. Com as aulas remotas, me juntei a alguns amigos e nos inscrevi no NASA Space Apps Challenge, o hackathon oficial da NASA. Ficamos em primeiro lugar no Brasil, o que foi um diferencial no meu currículo e me ajudou a conseguir meu primeiro estágio.' },
 
-    { id: 3, date: '2019', subtext: 'Faculdade e descobrindo da minha Ítaca', text: 'Mais tarde, na faculdade, descobri que minha paixão de verdade era o desenvolvimento de software focado no usuário, estudando layouts e como as cores afetam a percepção e a experiência final de um produto. Desde então, descobri que queria trabalhar construindo interfaces de software e UX.' },
+    { id: 4, date: '2021', subtext: 'Começo da minha trajetória profissional', text: ' Esse foi o pontapé inicial para minha carreira. Após várias entrevistas, consegui meu primeiro estágio em desenvolvimento de software. Foi um desafio e uma experiência incrível, onde aprendi back-end com Oracle e Node.js, e front-end com ReactJS, Bootstrap e Tailwind, além de metodologias ágeis e trabalho em equipe.' },
 
- { id: 4, date: '2020', text: 'Em meio à pandemia, continuei apaixonado por UI e decidi que era hora de testar minhas habilidades e conhecimentos. Com as aulas remotas, me juntei a alguns amigos e nos inscrevi no NASA Space Apps Challenge, o hackathon oficial da NASA. Ficamos em primeiro lugar no Brasil, o que foi um diferencial no meu currículo e me ajudou a conseguir meu primeiro estágio.' },
+    { id: 5, date: '2025', subtext: 'Hoje', text: 'Atualmente, sou Engenheiro de Software na Globant, mas minha meta é voltar a atuar exclusivamente com desenvolvimento Web UI e me tornar um especialista na área. Minha motivação é a constante evolução da tecnologia, que me impulsiona a sempre aprender e crescer.' },
 
-{ id: 5, date: '2021', subtext: 'Começo da minha trajetória profissional', text: ' Esse foi o pontapé inicial para minha carreira. Após várias entrevistas, consegui meu primeiro estágio em desenvolvimento de software. Foi um desafio e uma experiência incrível, onde aprendi back-end com Oracle e Node.js, e front-end com ReactJS, Bootstrap e Tailwind, além de metodologias ágeis e trabalho em equipe.' },
-
-{ id: 6, date: '2025', subtext: 'Nos dias de hoje..', text: 'Minha motivação central é o crescimento contínuo. Acredito que a tecnologia está em constante evolução, e é exatamente essa dinâmica que me inspira a sempre buscar novos aprendizados e me aprimorar. Meu foco em me especializar em Web UI e desenvolvimento front-end demonstra minha ambição genuína de dominar a área que realmente me apaixona.' },
-
-{ id: 7, date: 'Stacks', subtext: '', text: 'Minhas habilidades incluem o domínio de linguagens como: JavaScript, TypeScript e PHP, além de experiência com frameworks:  React e Vue. Também tenho conhecimento em frameworks de UI (Tailwind, Bootstrap, Material UI, Daisy UI) e ferramentas de design (Figma, StoryBook), complementando minha experiência com bancos de dados como PostgreSQL e MongoDB.' },
+    { id: 6, date: 'Stacks', subtext: '', text: 'Minhas habilidades incluem o domínio de linguagens como: JavaScript, TypeScript e PHP, além de experiência com frameworks:  React e Vue. Também tenho conhecimento em frameworks de UI (Tailwind, Bootstrap, Material UI, Daisy UI) e ferramentas de design (Figma, StoryBook), complementando minha experiência com bancos de dados como PostgreSQL e MongoDB.' },
 
 ];
 

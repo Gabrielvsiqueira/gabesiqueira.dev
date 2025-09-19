@@ -52,7 +52,7 @@ function Introduction() {
               Engenheiro de Software
             </motion.p>
             <motion.p variants={itemVariants} className='text-lg'>
-            Sou um Engenheiro de Software com uma forte paixão por desenvolvimento web, especialmente em UI/UX. Atuo hoje como Engenheiro de Testes, o que me permite garantir a qualidade e a robustez do código que produzo. Estou em busca de sempre aplicar meu conhecimento e minha paixão em desenvolvimento em novos desafios e projetos.
+            Sou um Engenheiro de Software com uma forte paixão por desenvolvimento web, especialmente em UI/UX.O que me permite garantir a qualidade e a robustez do código que produzo. Estou em busca de sempre aplicar meu conhecimento e minha paixão em desenvolvimento em novos desafios e projetos.
             </motion.p>
 
             <motion.div
